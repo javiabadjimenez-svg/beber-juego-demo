@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#1b1f3b" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Party Drinking Game</title>
+</head>
+<body>
+  <div class="app">
+    <h1>🍻 Party Drinking Game</h1>
+
+    <div class="row">
+      <button id="btnChallenge">Sacar reto</button>
+      <button id="btnWheel" class="secondary">🎯 Ruleta</button>
+    </div>
+
+    <div class="row">
+      <button id="btnAdd" class="secondary small">➕ Jugador</button>
+      <button id="btnClear" class="danger small">🧹 Vaciar</button>
+      <button id="btnReset" class="secondary small">🔄 Reset</button>
+    </div>
+
+    <select id="mode">
+      <option value="party">🔥 Modo Fiesta</option>
+      <option value="uni">🎓 Modo Universidad</option>
+      <option value="couple">❤️ Modo Pareja</option>
+    </select>
+
+    <select id="difficulty">
+      <option value="easy">😇 Suave</option>
+      <option value="normal" selected>🙂 Normal</option>
+      <option value="hard">😈 Intenso</option>
+      <option value="chaos">🔥🔥 Caos</option>
+    </select>
+
+    <div class="card" id="card">Añade jugadores para empezar 🍺</div>
+
+    <hr>
+    <div class="players" id="players"></div>
+
+    <div class="badges">
+      <span class="badge info">🤖 IA Activa</span>
+      <span class="badge ok" id="modeBadge">Fiesta</span>
+      <span class="badge danger" id="diffBadge">Normal</span>
+    </div>
+
+    <p class="footer">18+ · Bebe con cabeza</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
